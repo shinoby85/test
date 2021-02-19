@@ -1,0 +1,6 @@
+<label>Data:
+  <input type="text" [(ngModel)]="name">
+</label>
+<ng-container *ngIf="(stream$ | async) as stream">
+  <button (click)="test()">{{stream}}</button>
+</ng-container>
